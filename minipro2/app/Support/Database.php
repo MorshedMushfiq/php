@@ -23,7 +23,7 @@ abstract class Database {
      * private method(function) for database connection.
      */
     private function connection(){
-        return $this -> connection = mysqli_connect($this -> $db_host, $this -> $db_user, $this ->  $db_pass, $this -> $db_name);
+        return $this -> connection = new mysqli($this -> $db_host, $this -> $db_user, $this ->  $db_pass, $this -> $db_name);
     }
 
     /**
